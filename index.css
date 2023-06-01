@@ -1,0 +1,261 @@
+*{
+    font-family: segoe UI;
+}
+html{
+    scroll-behavior: smooth;
+}
+.all .nav{
+    position: fixed;
+    float: right;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+.all .nav ul{
+  list-style-type: none; 
+  display: flex;
+}
+.all .nav .list{
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px green;
+}
+.all .nav .list ul li{
+    padding: 10px;
+} 
+.all .nav .list ul li a{
+    text-decoration: none;
+    background-color: rgb(2, 77, 2);
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: 1px solid rgb(2, 77, 2);
+}
+.all .nav .list ul li a:hover{
+    background-color: #fff;
+    color: rgb(2, 77, 2);
+}
+.all .nav .list h2{
+    color: rgb(2, 77, 2);
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.user{
+    display: flex;
+    margin-top: 5%;
+}
+.all .user_text {
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.all .user_text p{
+    margin-top: 10%;
+}
+.orig-text{
+    position: relative;
+}
+.orig-text::after{
+    position: absolute;
+    content: '';
+    width: 35%;
+    height: 10px;
+    bottom: -50%;
+    border-radius: 250% 230% 80% 190%;
+    left: 50%;
+    background: rgb(2, 77, 2);
+    transform: rotate(-5deg) translateX(-50%);
+}
+.newFont{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: rgb(2, 77, 2);
+    text-align: center;
+    font-family: cursive;
+    
+}
+.all .user_text .user_text1{
+    background-color: white;
+    top: 0;
+}
+.all .user_text .user_text2{
+    background-color: #fff;
+}
+.all .user_photo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 3%;
+    justify-content: space-around;
+}
+.all .user_photo div{
+    width: 49.5%;
+    overflow: hidden;
+    margin: 1% 0;
+    height: 80%;
+    position: relative;
+}
+.all .user_photo img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    position: absolute;
+} 
+.all .user_photo img:hover{
+    border-radius: 10px;
+    transform: scale(1.1);
+} 
+/* services */
+.all .servise{
+    background-image: url("juice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 20%;
+    padding: 10%;
+    margin-bottom: 20%;
+}
+.all .servise p{
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+.all .servise .button{
+    transform: translate(45%);
+}
+.all .servise p{
+    color: #333;
+}
+
+.all .servise .button  a{
+    background-color: rgb(2, 77, 2);
+    color: #fff;
+    padding: 10px 80px 10px 80px;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.all .servise .button a:hover{
+    background-color: #fff;
+    color: rgb(2, 77, 2);
+}
+.all .servise .button button a:hover{
+    background: #fff;
+   
+}
+.servis_form{
+    display: flex;
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+}
+.servis_form .servis_form1{
+backdrop-filter: blur(20px);
+border: 1px solid rgb(2, 77, 2);
+border-radius: 20px;
+width: 50%;
+}
+.servis_form .servis_form1 h3{
+    color: rgb(2, 77, 2);
+    text-align: center;
+    /* padding-bottom: 20%; */
+}
+.servis_form .servis_form2{
+   padding: 10% 10% 20%;
+}
+.servis_form .servis_form1 div{
+    padding-top: 20px;
+}
+.servis_form .servis_form1 .submit{
+    padding-top: 20%;
+    padding-left: 20%;
+}
+.servis_form .servis_form1 input[type=text], input[type=password], input[type=email]{
+    width: 90%;
+    
+}
+.servis_form .servis_form1 input[type=submit]{
+    width: 80%;
+    font-size: 20px;
+    background: rgb(2, 77, 2);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.servis_form .servis_form2 input[type=submit]{
+    background-color: rgb(2, 77, 2);
+    color: #fff;
+    transition: 0.5s;
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.servis_form .servis_form2 input[type=submit]:hover{
+    background-color: #fff;
+    color: rgb(2, 77, 2);
+
+}
+.servis_form .servis_form1 input[type=submit]:hover{
+    background-color: #fff;
+    color: rgb(2, 77, 2);
+}
+.servis_form .servis_form1 div label{
+    color: rgb(2, 77, 2);
+    text-decoration: underline;
+}
+.servis_form .servis_form1 input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+/* footer */
+
+/* gallery style start */
+.all .g_photo{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10%;
+}
+.all .g_photo div{
+    padding-left: 10px;
+    overflow: hidden;
+    margin: 1% 0;
+    height: 80%;
+    padding-left: 100px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.all .g_photo img{
+    transition: 0.5s;
+    border-radius: 10px;
+    z-index: 1;
+}
+.all .g_photo img:hover{
+    border-radius: 10px;
+    transform: scale(1.1);
+    position: relative;
+}
+/* footer */
+.footer{
+    display: flex;
+    background-color: ghostwhite;
+    padding-left: 10%;
+}
+.footer .social_media, .about_us{
+    padding-left:10%;
+}
+.footer img{
+    width: 20px;
+}
+    

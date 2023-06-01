@@ -1,0 +1,10 @@
+body{
+	background-color: black;
+}
+form{
+	margin-top: 100px;
+	background-color: khaki;
+	border-radius: 30px;
+	margin-right: 400px;
+	margin-left: 400px;
+}
